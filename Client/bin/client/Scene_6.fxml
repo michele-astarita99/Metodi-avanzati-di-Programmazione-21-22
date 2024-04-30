@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Controller_3">
+   <children>
+      <Text layoutX="206.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserimento da Database" textAlignment="CENTER" wrappingWidth="337.33673095703125">
+         <font>
+            <Font name="Bookman Old Style" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameTextField" layoutX="296.0" layoutY="244.0" prefHeight="26.0" prefWidth="158.0" />
+      <Text layoutX="269.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digitare il nome della tabella: " wrappingWidth="211.20003662109366">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="Cerca" layoutX="665.0" layoutY="446.0" mnemonicParsing="false" onAction="#cerca" text="Cerca">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="196.0" fitWidth="178.0" layoutX="545.0" layoutY="168.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../immagini%20interfaccia/ricerca.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="178.0" fitWidth="231.0" layoutX="14.0" layoutY="161.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../immagini%20interfaccia/knn.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="ERRORE" fill="#cc3333" layoutX="295.0" layoutY="294.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ERRORE!" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="158.39999999999986">
+         <font>
+            <Font name="serif" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="SCRITTAERRORE" fill="#cc3333" layoutX="97.0" layoutY="371.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CREDENZIALI DI ACCESSO AL DB ERRATE O NOME TABELLA INESISTENTE" textAlignment="JUSTIFY" textOrigin="CENTER" wrappingWidth="596.2194366455078">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

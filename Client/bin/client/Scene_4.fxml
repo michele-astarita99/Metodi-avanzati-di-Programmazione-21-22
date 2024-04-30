@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Controller_4">
+         <children>
+            <Label fx:id="nameLabel1" layoutX="235.0" layoutY="90.0" prefHeight="46.0" prefWidth="210.0">
+               <font>
+                  <Font name="serif" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="opaco1" layoutX="237.0" layoutY="90.0" opacity="0.8" prefHeight="46.0" prefWidth="237.0" text="Inserire valore discreto:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+             <Label fx:id="opaco2" layoutX="236.0" layoutY="201.0" opacity="0.8" prefHeight="46.0" prefWidth="210.0" text="Inserire valore continuo:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="opaco3" layoutX="236.0" layoutY="333.0" opacity="0.8" prefHeight="46.0" prefWidth="210.0" text="Inserire parametro k: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="bottone1" layoutX="444.0" layoutY="144.0" mnemonicParsing="false" text="Conferma">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="predizione" layoutX="619.0" layoutY="430.0" mnemonicParsing="false" onAction="#carica_scena7" text="Predizione">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorek" layoutX="237.0" layoutY="430.0" opacity="0.0" prefHeight="23.0" prefWidth="247.0" text="Valore non valido" textFill="#cc3333" wrapText="true">
+               <font>
+                  <Font name="serif" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel2" layoutX="235.0" layoutY="201.0" prefHeight="46.0" prefWidth="238.0">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel3" layoutX="235.0" layoutY="333.0" prefHeight="46.0" prefWidth="238.0">
+               <font>
+                  <Font name="serif" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="bottone3" layoutX="444.0" layoutY="387.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Conferma">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="erroredouble" layoutX="223.0" layoutY="303.0" maxHeight="-Infinity" maxWidth="-Infinity" opacity="0.0" prefHeight="23.0" prefWidth="274.0" text="Valore inserito non continuo" textFill="#cc3333" wrapText="true">
+               <font>
+                  <Font name="serif" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="bottone2" layoutX="444.0" layoutY="258.0" mnemonicParsing="false" text="Conferma">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="knn" layoutX="239.0" layoutY="387.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="174.0">
+               <font>
+                  <Font name="serif" size="18.0" />
+               </font>
+            </TextField>
+            <Label fx:id="stringavuota" layoutX="236.0" layoutY="184.0" opacity="0.0" prefHeight="23.0" prefWidth="247.0" text="Campo valore vuoto!" textFill="#cc3333" wrapText="true">
+               <font>
+                  <Font name="serif" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="continuo" layoutX="235.0" layoutY="257.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="166.0">
+               <font>
+                  <Font name="serif" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="discreto" layoutX="239.0" layoutY="143.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="158.0">
+               <font>
+                  <Font name="serif" size="18.0" />
+               </font>
+            </TextField>
+      <ImageView fitHeight="114.0" fitWidth="166.0" layoutX="570.0" layoutY="184.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../immagini%20interfaccia/binary.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="53.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caricamento dell'esempio su cui effettuare la predizione" wrappingWidth="687.2000305175782">
+         <font>
+            <Font name="Bookman Old Style" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="28.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../immagini%20interfaccia/file%20binario.png" />
+         </image>
+      </ImageView>
+         </children>
+      </AnchorPane>
